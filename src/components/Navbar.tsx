@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-10 backdrop-blur-md">
+    <div className="sticky top-0 z-10 backdrop-blur-md backdrop-brightness-50">
       <div className="relative flex items-center h-fit p-6 max-w-[1200px] mx-auto">
         <Link href="/" className="flex items-center space-x-2 mr-auto">
           <Image src={"/icon.png"} width={40} height={40} alt="icon" />
