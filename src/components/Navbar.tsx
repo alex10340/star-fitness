@@ -1,6 +1,7 @@
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { Star } from "lucide-react";
+import { Menu } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -17,7 +18,7 @@ const Navbar = () => {
               <Button variant={"ghost"}>Classes</Button>
             </Link>
 
-            <Link href="/">
+            <Link href="/#membership">
               <Button variant={"ghost"}>Memberships</Button>
             </Link>
           </div>
@@ -28,6 +29,8 @@ const Navbar = () => {
             Sign Up
           </Button>
         </Link>
+
+        <Menu className="ml-6 sm:hidden" />
       </div>
     </div>
   );

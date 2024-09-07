@@ -51,7 +51,10 @@ export default function Home() {
       </section>
 
       <h2 className="my-12 text-center scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
-        This is us.
+        This is&nbsp;
+        <span className="bg-clip-text text-transparent bg-gradient-to-b from-rose-500 to-rose-800">
+          us.
+        </span>
       </h2>
       <Gallery />
 
@@ -85,7 +88,7 @@ export default function Home() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12 mb-12">
         <div className="relative min-h-[200px] overflow-hidden border rounded-lg sm:row-span-2">
           <Image
-            src={"/gallery/gallery11.jpg"}
+            src={"/welcome.jpg"}
             fill
             alt="Gallery image"
             className="object-cover rounded-lg"
@@ -108,17 +111,20 @@ export default function Home() {
       </div>
       <hr className="my-12" />
 
-      <h2 className="mt-12 text-center scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl ">
+      <h2
+        id="membership"
+        className="text-center scroll-m-28 text-4xl font-extrabold tracking-tight lg:text-5xl "
+      >
         Choose your
         <span className="bg-clip-text text-transparent bg-gradient-to-b from-rose-500 to-rose-800">
           &nbsp;Membership.
         </span>
       </h2>
-      <p className="text-center text-muted-foreground leading-7 [&:not(:first-child)]:mt-6">
+      <p className="md:px-6 text-center mx-auto text-muted-foreground leading-7 [&:not(:first-child)]:mt-6">
         We offer two memberships, pick the one that's right for you! Both get
         you access to all of our gyms.
       </p>
-      <div className="grid grid-cols-2 gap-8 p-12 max-w-[900px] mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 py-12 md:p-6 max-w-[900px] mx-auto">
         <Card className="border-rose-800 border-2">
           <CardHeader>
             <CardTitle className="flex justify-between">
@@ -163,6 +169,8 @@ export default function Home() {
           </CardFooter>
         </Card>
       </div>
+
+      <div className="h-[1000px]"></div>
     </div>
   );
 }
