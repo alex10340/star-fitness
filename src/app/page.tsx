@@ -124,8 +124,8 @@ export default function Home() {
         </span>
       </h2>
       <p className="md:px-6 text-center mx-auto text-muted-foreground leading-7 [&:not(:first-child)]:mt-6">
-        We offer two memberships, pick the one that's right for you! Both get
-        you access to all of our gyms.
+        We offer two memberships, pick the one that&apos;s right for you! Both
+        get you access to all of our gyms.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 py-12 md:p-6 max-w-[900px] mx-auto">
         <Card className="border-rose-800 border-2">
