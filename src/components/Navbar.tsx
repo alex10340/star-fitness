@@ -1,7 +1,7 @@
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { Star } from "lucide-react";
-import { Menu } from "lucide-react";
+import MobileMenuDrawer from "./MobileMenuDrawer";
 
 const Navbar = () => {
   return (
@@ -30,7 +30,7 @@ const Navbar = () => {
           </Button>
         </Link>
 
-        <Menu className="ml-6 sm:hidden" />
+        <MobileMenuDrawer className="pl-2" />
       </div>
     </div>
   );
