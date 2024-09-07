@@ -136,7 +136,8 @@ export default function Home() {
           <CardContent>
             <p>Starting at</p>
             <p>
-              <span className="text-primary text-3xl font-bold">$32.99</span>/mo
+              <span className="text-primary text-3xl font-bold">$32.99</span>
+              /mo*
             </p>
           </CardContent>
           <CardFooter className="flex justify-between">
@@ -156,7 +157,7 @@ export default function Home() {
           <CardContent className="grow">
             <p>Starting at</p>
             <p>
-              <span className="text-primary text-3xl font-bold">$8.99</span>/mo
+              <span className="text-primary text-3xl font-bold">$8.99</span>/mo*
             </p>
           </CardContent>
           <CardFooter className="flex justify-between">
@@ -168,6 +169,13 @@ export default function Home() {
             </Link>
           </CardFooter>
         </Card>
+        <p className="sm:col-span-2 mx-auto text-muted-foreground leading-5 text-sm">
+          *Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Necessitatibus aliquam eaque nisi libero vitae? Impedit corporis vero
+          vel, provident, laborum, quo pariatur a distinctio autem harum quis
+          placeat omnis repellat voluptatum assumenda maxime sunt earum ea
+          nihil? Provident, dolor laboriosam.
+        </p>
       </div>
 
       <div className="h-[1000px]"></div>

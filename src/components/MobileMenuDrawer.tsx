@@ -21,7 +21,7 @@ export default function MobileMenuDrawer({ className }: MobileMenuDrawerProps) {
   ];
 
   return (
-    <div className={cn("md:hidden", className)}>
+    <div className={cn("sm:hidden", className)}>
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
           <Button variant="outline" size="icon">
