@@ -14,8 +14,8 @@ const Navbar = () => {
 
         <div className="hidden sm:block">
           <div className="space-x-2">
-            <Link href="/">
-              <Button variant={"ghost"}>Classes</Button>
+            <Link href="/" passHref legacyBehavior>
+              <Button variant="ghost">Classes</Button>
             </Link>
 
             <Link href="/#membership">

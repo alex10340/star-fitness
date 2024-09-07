@@ -44,6 +44,7 @@ export default function Home() {
           <Image
             src={"/hero2.jpg"}
             fill
+            sizes="(max-width: 640px) 100vw, 50vw"
             alt="hero image"
             className="object-cover rounded-lg"
           />
@@ -79,6 +80,7 @@ export default function Home() {
           <Image
             src={"/location.jpg"}
             fill
+            sizes="(max-width: 640px) 100vw, 50vw"
             alt="Gallery image"
             className="object-cover rounded-lg"
           />
@@ -90,6 +92,7 @@ export default function Home() {
           <Image
             src={"/welcome.jpg"}
             fill
+            sizes="(max-width: 640px) 100vw, 50vw"
             alt="Gallery image"
             className="object-cover rounded-lg"
           />

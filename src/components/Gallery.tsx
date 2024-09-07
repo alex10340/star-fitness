@@ -7,6 +7,7 @@ export default function Gallery() {
         <Image
           src={"/gallery/gallery01.jpg"}
           fill
+          sizes="(max-width: 640px) 100vw, 50vw"
           alt="Gallery image"
           className="object-cover rounded-lg"
         />
@@ -15,6 +16,7 @@ export default function Gallery() {
         <Image
           src={"/gallery/gallery04.jpg"}
           fill
+          sizes="(max-width: 640px) 100vw, 50vw"
           alt="Gallery image"
           className="object-cover rounded-lg"
         />
@@ -23,6 +25,7 @@ export default function Gallery() {
         <Image
           src={"/gallery/gallery03.jpg"}
           fill
+          sizes="(max-width: 640px) 100vw, 50vw"
           alt="Gallery image"
           className="object-cover rounded-lg"
         />
@@ -31,6 +34,7 @@ export default function Gallery() {
         <Image
           src={"/gallery/gallery08.jpg"}
           fill
+          sizes="(max-width: 640px) 100vw, 50vw"
           alt="Gallery image"
           className="object-cover rounded-lg"
         />
