@@ -21,8 +21,11 @@ export default function Home() {
             him with a problem: the kingdom was running out of money.
           </p>
           <Link href="/join" className="mt-6">
-            <Button className="w-full px-6" size={"lg"}>
-              <ClipboardPen className="mr-2" />
+            <Button
+              className="w-full px-6 bg-gradient-to-b from-rose-500 to-rose-600"
+              size={"lg"}
+            >
+              <ClipboardPen className="mr-2 " />
               Sign Up
             </Button>
           </Link>
