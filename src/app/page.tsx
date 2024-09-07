@@ -45,6 +45,7 @@ export default function Home() {
             src={"/hero2.jpg"}
             fill
             sizes="(max-width: 640px) 100vw, 50vw"
+            priority
             alt="hero image"
             className="object-cover rounded-lg"
           />
