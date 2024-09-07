@@ -1,16 +1,17 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ClipboardPen } from "lucide-react";
 
 export default function Home() {
   return (
     <>
-      <div className="max-w-[1200px] mx-auto p-6">
-        <section className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <div className="max-w-screen-xl mx-auto p-6 sm:py-12">
+        <section className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12">
           <div className="order-2 sm:order-1 flex flex-col justify-center max-w-lg">
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
               Welcome to a new level of
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-rose-700">
+              <span className="bg-clip-text text-transparent bg-gradient-to-b from-rose-500 to-rose-800">
                 &nbsp;fitness.
               </span>
             </h1>
@@ -27,14 +28,17 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="order-1 sm:order-2">
-            <video autoPlay loop muted playsInline className="rounded-lg">
-              <source src="/hero_video.mp4" type="video/mp4" />
-            </video>
+          <div className="relative aspect-[16/9] rounded-lg border order-1 sm:order-2">
+            <Image
+              src={"/hero2.jpg"}
+              fill
+              alt="hero image"
+              className="object-cover rounded-lg"
+            />
           </div>
         </section>
 
-        <h2 className="h-[10000px] mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+        <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           This is us.
         </h2>
       </div>
