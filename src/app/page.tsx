@@ -109,6 +109,44 @@ export default function Home() {
           </p>
         </div>
       </div>
+
+      <hr className="my-12" />
+
+      <section className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12">
+        <div className="order-2 sm:order-1 max-w-lg sm:py-12">
+          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+            Join us in our
+            <span className="bg-clip-text text-transparent bg-gradient-to-b from-rose-500 to-rose-800">
+              &nbsp;classes.
+            </span>
+          </h1>
+          <p className="leading-7 [&:not(:first-child)]:mt-6">
+            Once upon a time, in a far-off land, there was a very lazy king who
+            spent all day lounging on his throne. One day, his advisors came to
+            him with a problem: the kingdom was running out of money.
+          </p>
+          <Link href="/classes" passHref legacyBehavior>
+            <Button
+              className="mt-6 w-full px-6 bg-gradient-to-b from-rose-500 to-rose-600"
+              size={"lg"}
+            >
+              See our Classes
+            </Button>
+          </Link>
+        </div>
+
+        <div className="relative min-h-[200px] rounded-lg border order-1 sm:order-2">
+          <Image
+            src={"/gallery/gallery02.jpg"}
+            fill
+            sizes="(max-width: 640px) 100vw, 50vw"
+            priority
+            alt="hero image"
+            className="object-cover rounded-lg"
+          />
+        </div>
+      </section>
+
       <hr className="my-12" />
 
       <h2
