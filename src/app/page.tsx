@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <div className="max-w-screen-xl mx-auto p-6 sm:py-12">
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12">
-        <div className="order-2 sm:order-1 flex flex-col justify-center max-w-lg sm:py-12">
-          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl ">
+        <div className="order-2 sm:order-1 max-w-lg sm:py-12">
+          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
             Welcome to a new level of
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-rose-500 to-rose-800">
               &nbsp;fitness.
@@ -51,20 +51,17 @@ export default function Home() {
           />
         </div>
       </section>
-
-      <h2 className="my-12 text-center scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+      <h2 className="my-12 text-center scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight">
         This is&nbsp;
         <span className="bg-clip-text text-transparent bg-gradient-to-b from-rose-500 to-rose-800">
           us.
         </span>
       </h2>
       <Gallery />
-
       <hr className="my-12" />
-
-      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12 mb-12">
-        <div className="order-2 sm:order-1 sm:py-12">
-          <h2 className="mt-12 scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+      <div className="my-12 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12">
+        <div className="order-2 sm:order-1 sm:py-16">
+          <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight">
             We have over
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-rose-500 to-rose-800">
               &nbsp;200 locations&nbsp;
@@ -77,7 +74,7 @@ export default function Home() {
             him with a problem: the kingdom was running out of money.
           </p>
         </div>
-        <div className="order-1 sm:order-2 relative min-h-[200px] overflow-hidden border rounded-lg sm:row-span-2">
+        <div className="order-1 sm:order-2 relative min-h-[200px] overflow-hidden border rounded-lg">
           <Image
             src={"/location.jpg"}
             fill
@@ -87,9 +84,8 @@ export default function Home() {
           />
         </div>
       </div>
-
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12 mb-12">
-        <div className="relative min-h-[200px] overflow-hidden border rounded-lg sm:row-span-2">
+        <div className="relative min-h-[200px] overflow-hidden border rounded-lg">
           <Image
             src={"/welcome.jpg"}
             fill
@@ -99,8 +95,8 @@ export default function Home() {
           />
         </div>
 
-        <div className="sm:py-12">
-          <h2 className="mt-12 scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+        <div className="sm:py-16">
+          <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight">
             Everybody is
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-rose-500 to-rose-800">
               &nbsp;welcome.&nbsp;

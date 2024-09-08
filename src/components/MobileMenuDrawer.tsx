@@ -3,7 +3,13 @@
 import { useState } from "react";
 import { Menu, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetTitle,
+  SheetContent,
+  SheetTrigger,
+  SheetDescription,
+} from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
@@ -16,7 +22,7 @@ export default function MobileMenuDrawer({ className }: MobileMenuDrawerProps) {
 
   const menuItems = [
     { label: "Home", href: "/" },
-    { label: "Classes", href: "/" },
+    { label: "Classes", href: "/classes" },
     { label: "Memberships", href: "/#membership" },
   ];
 
@@ -29,6 +35,7 @@ export default function MobileMenuDrawer({ className }: MobileMenuDrawerProps) {
             <span className="sr-only">Toggle menu</span>
           </Button>
         </SheetTrigger>
+        <SheetTitle></SheetTitle>
         <SheetContent side="left" className="w-[300px] sm:w-[400px]">
           <div className="flex items-center space-x-2 mr-auto">
             <Star className="text-primary" />
@@ -47,6 +54,7 @@ export default function MobileMenuDrawer({ className }: MobileMenuDrawerProps) {
             ))}
           </nav>
         </SheetContent>
+        <SheetDescription></SheetDescription>
       </Sheet>
     </div>
   );
