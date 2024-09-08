@@ -8,7 +8,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Star Fitness | A new level of fitness",
-  description: "", // fill in later
+  description: "Welcome to a new level of fitness.", // fill in later
 };
 
 const inter = Inter({
