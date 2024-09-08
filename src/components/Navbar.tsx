@@ -18,14 +18,14 @@ const Navbar = () => {
               <Button variant="ghost">Classes</Button>
             </Link>
 
-            <Link href="/#membership">
+            <Link href="/#membership" passHref legacyBehavior>
               <Button variant={"ghost"}>Memberships</Button>
             </Link>
           </div>
         </div>
 
-        <Link href="/join" className="pl-2">
-          <Button className="px-6 bg-gradient-to-b from-rose-500 to-rose-600">
+        <Link href="/join" passHref legacyBehavior>
+          <Button className="ml-2 px-6 bg-gradient-to-b from-rose-500 to-rose-600">
             Sign Up
           </Button>
         </Link>

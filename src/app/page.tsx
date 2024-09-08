@@ -29,9 +29,9 @@ export default function Home() {
             spent all day lounging on his throne. One day, his advisors came to
             him with a problem: the kingdom was running out of money.
           </p>
-          <Link href="/join" className="mt-6">
+          <Link href="/join" passHref legacyBehavior>
             <Button
-              className="w-full px-6 bg-gradient-to-b from-rose-500 to-rose-600"
+              className="mt-6 w-full px-6 bg-gradient-to-b from-rose-500 to-rose-600"
               size={"lg"}
             >
               <ClipboardPen className="mr-2 " />
@@ -63,8 +63,8 @@ export default function Home() {
       <hr className="my-12" />
 
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12 mb-12">
-        <div className="order-2 sm:order-1 py-12">
-          <h2 className="mt-12  scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+        <div className="order-2 sm:order-1 sm:py-12">
+          <h2 className="mt-12 scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
             We have over
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-rose-500 to-rose-800">
               &nbsp;200 locations&nbsp;
@@ -99,7 +99,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="py-12">
+        <div className="sm:py-12">
           <h2 className="mt-12 scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
             Everybody is
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-rose-500 to-rose-800">
@@ -146,8 +146,8 @@ export default function Home() {
           </CardContent>
           <CardFooter className="flex justify-between">
             <p className="text-sm underline cursor-pointer">Learn More</p>
-            <Link href="/join" className="pl-2">
-              <Button className="px-6 bg-gradient-to-b from-rose-500 to-rose-600">
+            <Link href="/join" passHref legacyBehavior>
+              <Button className="ml-2 px-6 bg-gradient-to-b from-rose-500 to-rose-600">
                 Sign Up
               </Button>
             </Link>
@@ -166,8 +166,8 @@ export default function Home() {
           </CardContent>
           <CardFooter className="flex justify-between">
             <p className="text-sm underline cursor-pointer">Learn More</p>
-            <Link href="/join" className="pl-2">
-              <Button className="px-6 bg-gradient-to-b from-rose-500 to-rose-600">
+            <Link href="/join" passHref legacyBehavior>
+              <Button className="ml-2 px-6 bg-gradient-to-b from-rose-500 to-rose-600">
                 Sign Up
               </Button>
             </Link>
@@ -181,8 +181,6 @@ export default function Home() {
           nihil? Provident, dolor laboriosam.
         </p>
       </div>
-
-      <div className="h-[1000px]"></div>
     </div>
   );
 }

@@ -1,3 +1,10 @@
+import Link from "next/link";
+import { Star } from "lucide-react";
+
 export default function Footer() {
-  return <div>Footer</div>;
+  return (
+    <footer>
+      <div></div>
+    </footer>
+  );
 }
