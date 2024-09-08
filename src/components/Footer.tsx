@@ -32,11 +32,23 @@ export default function Footer() {
             <Link href="/" className=" hover:text-primary">
               About Us
             </Link>
-            <Link href="/classes" className=" hover:text-primary">
+            <Link href="/" className=" hover:text-primary">
               Contact
             </Link>
-            <Link href="/#membership" className=" hover:text-primary">
+            <Link href="/" className=" hover:text-primary">
               Franchising
+            </Link>
+          </nav>
+          <p className="border-b pb-2 text-lg pt-4">Legal</p>
+          <nav className="flex flex-col space-y-4 font-medium">
+            <Link href="/" className=" hover:text-primary">
+              Terms of Use
+            </Link>
+            <Link href="/" className=" hover:text-primary">
+              Privary policy
+            </Link>
+            <Link href="/" className=" hover:text-primary">
+              Cookie policy
             </Link>
           </nav>
         </div>
