@@ -64,7 +64,7 @@ export default function Home() {
       <hr className="my-12" />
       <div className="my-12 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12">
         <div className="order-2 sm:order-1 sm:py-16">
-          <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight">
+          <h2 className="scroll-m-20 text-3xl lg:text-4xl font-bold tracking-tight">
             We have over
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-rose-500 to-rose-800">
               &nbsp;200 locations&nbsp;
@@ -79,7 +79,7 @@ export default function Home() {
         </div>
         <div className="order-1 sm:order-2 relative min-h-[200px] overflow-hidden border rounded-lg">
           <Image
-            src={"/location.jpg"}
+            src={"/location2.jpg"}
             fill
             sizes="(max-width: 640px) 100vw, 50vw"
             alt="Gallery image"
@@ -99,7 +99,7 @@ export default function Home() {
         </div>
 
         <div className="sm:py-16">
-          <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight">
+          <h2 className="scroll-m-20 text-3xl lg:text-4xl font-bold tracking-tight">
             Everybody is
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-rose-500 to-rose-800">
               &nbsp;welcome.&nbsp;

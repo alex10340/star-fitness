@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Gallery() {
   return (
     <div className="relative grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-cols-auto auto-rows-[250px] sm:auto-rows-[300px]">
-      <div className="absolute z-50 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-full">
+      <div className="absolute z-10 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-full">
         <h2 className="text-9xl text-center scroll-m-20 font-extrabold drop-shadow-2xl tracking-tight">
           This is&nbsp;
           <span className="bg-clip-text text-transparent bg-gradient-to-b from-rose-500 to-rose-800">
