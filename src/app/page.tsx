@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { ClipboardPen } from "lucide-react";
+import { PencilLine, Table } from "lucide-react";
 import Gallery from "@/components/Gallery";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -29,12 +29,12 @@ export default function Home() {
             spent all day lounging on his throne. One day, his advisors came to
             him with a problem: the kingdom was running out of money.
           </p>
-          <Link href="/join" passHref legacyBehavior>
+          <Link href="/signup" passHref legacyBehavior>
             <Button
               className="mt-6 w-full px-6 bg-gradient-to-b from-rose-500 to-rose-600"
               size={"lg"}
             >
-              <ClipboardPen className="mr-2 " />
+              <PencilLine className="mr-2 " />
               Sign Up
             </Button>
           </Link>
@@ -133,7 +133,8 @@ export default function Home() {
               className="mt-6 w-full px-6 bg-gradient-to-b from-rose-500 to-rose-600"
               size={"lg"}
             >
-              See our Classes
+              <Table className="mr-2" />
+              Browse Classes
             </Button>
           </Link>
         </div>
@@ -183,7 +184,7 @@ export default function Home() {
           </CardContent>
           <CardFooter className="flex justify-between">
             <p className="text-sm underline cursor-pointer">Learn More</p>
-            <Link href="/join" passHref legacyBehavior>
+            <Link href="/signup" passHref legacyBehavior>
               <Button className="ml-2 px-6 bg-gradient-to-b from-rose-500 to-rose-600">
                 Sign Up
               </Button>
@@ -203,7 +204,7 @@ export default function Home() {
           </CardContent>
           <CardFooter className="flex justify-between">
             <p className="text-sm underline cursor-pointer">Learn More</p>
-            <Link href="/join" passHref legacyBehavior>
+            <Link href="/signup" passHref legacyBehavior>
               <Button className="ml-2 px-6 bg-gradient-to-b from-rose-500 to-rose-600">
                 Sign Up
               </Button>

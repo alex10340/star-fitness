@@ -46,12 +46,20 @@ export default function MobileMenuDrawer({ className }: MobileMenuDrawerProps) {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-lg font-medium hover:text-primary"
+                className="w-fit text-lg font-medium hover:text-primary"
                 onClick={() => setOpen(false)}
               >
                 {item.label}
               </Link>
             ))}
+            <Link href="/signup" passHref legacyBehavior>
+              <Button
+                onClick={() => setOpen(false)}
+                className="w-48 bg-gradient-to-b from-rose-500 to-rose-600"
+              >
+                Sign Up
+              </Button>
+            </Link>
           </nav>
         </SheetContent>
         <SheetDescription></SheetDescription>

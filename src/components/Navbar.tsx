@@ -24,7 +24,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <Link href="/join" passHref legacyBehavior>
+        <Link href="/signup" passHref legacyBehavior>
           <Button className="ml-2 px-6 bg-gradient-to-b from-rose-500 to-rose-600">
             Sign Up
           </Button>
