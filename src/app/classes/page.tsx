@@ -109,7 +109,7 @@ export default function Classes() {
         />
         <div className="absolute z-10 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-full">
           <h2 className="text-6xl sm:text-8xl text-center scroll-m-20 font-extrabold drop-shadow-2xl tracking-tight">
-            Let's get &nbsp;
+            Let&apos;s get &nbsp;
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-rose-500 to-rose-800">
               started.
             </span>
