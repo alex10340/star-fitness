@@ -4,9 +4,9 @@ import { Star } from "lucide-react";
 export default function Footer() {
   return (
     <>
-      <footer className="lg:hidden max-w-screen-xl border-t mx-auto">
-        <div className="flex flex-col gap-4 p-6">
-          <Link href="/" className="flex items-center space-x-2 mr-auto">
+      <footer className="lg:hidden text-center max-w-screen-xl border-t">
+        <div className="flex flex-col gap-4 p-6 mx-auto">
+          <Link href="/" className="flex items-center space-x-2 mx-auto">
             <Star className="text-primary" />
             <p className="font-bold text-lg">Star Fitness</p>
           </Link>
@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-4">
             <p className="font-medium text-lg">Links</p>
-            <nav className="flex flex-col space-y-4 text-sm text-muted-foreground">
+            <nav className="flex flex-col space-y-4 text-sm text-muted-foreground [&>*]:w-fit">
               <Link href="/" className=" hover:text-primary">
                 Home
               </Link>
@@ -83,7 +83,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-4">
             <p className="font-medium text-lg">Company</p>
-            <nav className="flex flex-col space-y-4 text-sm text-muted-foreground">
+            <nav className="flex flex-col space-y-4 text-sm text-muted-foreground [&>*]:w-fit">
               <Link href="/" className=" hover:text-primary">
                 About Us
               </Link>
@@ -97,7 +97,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-4">
             <p className="font-medium text-lg">Legal</p>
-            <nav className="flex flex-col space-y-4 text-sm text-muted-foreground">
+            <nav className="flex flex-col space-y-4 text-sm text-muted-foreground [&>*]:w-fit ">
               <Link href="/" className=" hover:text-primary">
                 Terms of Use
               </Link>
