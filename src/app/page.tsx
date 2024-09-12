@@ -51,12 +51,6 @@ export default function Home() {
           />
         </div>
       </section>
-      {/* <h2 className="my-12 text-center scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight">
-        This is&nbsp;
-        <span className="bg-clip-text text-transparent bg-gradient-to-b from-rose-500 to-rose-800">
-          us.
-        </span>
-      </h2> */}
 
       <hr className="my-12" />
 

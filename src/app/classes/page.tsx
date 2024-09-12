@@ -67,8 +67,8 @@ export default function Classes() {
         </span>
       </h1>
       <p className="md:px-6 text-center mx-auto text-muted-foreground leading-7 [&:not(:first-child)]:mt-6">
-        We host the following classes in our gyms. Pick your favorite and
-        let&apos;s go!
+        We host the following classes in our gyms, every day. Pick your favorite
+        and let&apos;s go!
       </p>
 
       <div className="mt-6 sm:mt-12 border-2 border-card rounded-lg max-w-screen-lg mx-auto">
