@@ -152,7 +152,7 @@ export default function Signup() {
                   </div>
                   <div className="flex flex-col space-y-1.5">
                     <Label htmlFor="expiry">Expiry date</Label>
-                    <Input id="expiry" placeholder="Expiry date" />
+                    <Input id="expiry" placeholder="MM/YY" />
                   </div>
                   <div className="flex flex-col space-y-1.5">
                     <Label htmlFor="cvv">CVV</Label>
