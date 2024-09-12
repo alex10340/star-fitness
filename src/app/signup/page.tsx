@@ -103,7 +103,7 @@ export default function Signup() {
             ea nihil? Provident, dolor laboriosam.
           </p>
         </div>
-        <div className="grid gap-8 mb-12 md:my-12 md:w-[45%]">
+        <div className="grid gap-8 mb-0 md:my-12 md:w-[45%]">
           <Card className="h-fit">
             <CardHeader>
               <CardTitle>Contact Information</CardTitle>
