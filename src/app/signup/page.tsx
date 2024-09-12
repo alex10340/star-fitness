@@ -10,15 +10,7 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { useEffect, useState } from "react";
 
@@ -49,7 +41,7 @@ export default function Signup() {
       </p>
 
       <div className="flex justify-center flex-wrap md:gap-8">
-        <div className="grid grid-cols-1 gap-8 my-12 md:max-w-[45%]">
+        <div className="grid grid-cols-1 gap-8 my-12 h-fit md:max-w-[45%]">
           <Card className="border-rose-800 border-2">
             <CardHeader>
               <CardTitle className="flex justify-between">
