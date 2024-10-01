@@ -71,24 +71,26 @@ export default function Classes() {
         and let&apos;s go!
       </p>
 
-      <div className="mt-6 sm:mt-12 border-2 border-card rounded-lg max-w-screen-lg mx-auto">
+      {/* <hr className="my-6 max-w-screen-lg mx-auto" /> */}
+
+      <div className="mt-6 sm:mt-12 max-w-screen-lg mx-auto">
         <Table className="overflow-hidden">
-          <TableCaption className="pb-4">Class Timetable</TableCaption>
+          {/* <TableCaption className="pb-4">Class Timetable</TableCaption> */}
           <TableHeader>
             <TableRow>
-              <TableHead className="w-[135px] sm:w-[200px]">Class</TableHead>
               <TableHead>Instructor</TableHead>
-              <TableHead className="text-right">Time</TableHead>
+              <TableHead>Class</TableHead>
+              <TableHead className="text-right w-[100px] sm:w-[200px]">
+                Time
+              </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {classes.map((item) => (
-              <TableRow key={item.class}>
-                <TableCell className="font-medium">{item.class}</TableCell>
+              <TableRow key={item.class} className="max-sm:text-xs">
                 <TableCell>{item.instructor}</TableCell>
-                <TableCell className="text-right font-medium">
-                  {item.time}
-                </TableCell>
+                <TableCell className="font-medium">{item.class}</TableCell>
+                <TableCell className="text-right">{item.time}</TableCell>
               </TableRow>
             ))}
           </TableBody>

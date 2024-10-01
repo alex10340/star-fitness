@@ -113,10 +113,14 @@ export default function Signup() {
               <form>
                 <div className="grid w-full items-center gap-4">
                   <div className="flex flex-col space-y-1.5">
-                    <Label htmlFor="name">Name</Label>
-                    <Input id="name" placeholder="Your name" />
+                    <Label htmlFor="name">First name</Label>
+                    <Input id="name" placeholder="John" />
                   </div>
                   <div className="flex flex-col space-y-1.5">
+                    <Label htmlFor="name">Last name</Label>
+                    <Input id="name" placeholder="Doe" />
+                  </div>
+                  <div className="flex flex-col col-span-2 space-y-1.5">
                     <Label htmlFor="address">Address</Label>
                     <Input id="address" placeholder="123 Main Street" />
                   </div>
