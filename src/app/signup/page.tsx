@@ -12,16 +12,12 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 type Membership = "full" | "weekend" | null;
 
 export default function Signup() {
   const [membership, setMembership] = useState<Membership>(null);
-
-  useEffect(() => {
-    console.log(membership);
-  }, [membership]);
 
   return (
     <div className="max-w-screen-xl mx-auto p-6 py-12">
@@ -126,21 +122,15 @@ export default function Signup() {
                   </div>
                   <div className="flex flex-col space-y-1.5">
                     <Label htmlFor="city">City</Label>
-                    <Input id="city" placeholder="Your city" />
+                    <Input id="city" placeholder="City" />
                   </div>
                   <div className="flex flex-col space-y-1.5">
                     <Label htmlFor="postalcode">Postal code</Label>
-                    <Input id="postalcode" placeholder="Your postal code" />
+                    <Input id="postalcode" placeholder="Postal code" />
                   </div>
                 </div>
               </form>
             </CardContent>
-            {/* <CardFooter className="flex justify-between">
-              <div className="flex items-center space-x-2">
-                <Checkbox id="terms" />
-                <Label htmlFor="terms">Accept terms and conditions</Label>
-              </div>
-            </CardFooter> */}
           </Card>
           <Card className="h-fit">
             <CardHeader>

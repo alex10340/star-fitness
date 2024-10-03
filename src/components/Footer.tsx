@@ -15,7 +15,7 @@ export default function Footer() {
             <li>info@startfitness.com</li>
           </ul>
           <p className="border-b pb-2 text-lg">Links</p>
-          <nav className="flex flex-col space-y-4 font-medium">
+          <nav className="flex flex-col text-muted-foreground space-y-4 font-medium">
             <Link href="/" className=" hover:text-primary">
               Home
             </Link>
@@ -27,7 +27,7 @@ export default function Footer() {
             </Link>
           </nav>
           <p className="border-b pb-2 text-lg pt-4">Company</p>
-          <nav className="flex flex-col space-y-4 font-medium">
+          <nav className="flex flex-col text-muted-foreground space-y-4 font-medium">
             <Link href="/" className=" hover:text-primary">
               About Us
             </Link>
@@ -39,7 +39,7 @@ export default function Footer() {
             </Link>
           </nav>
           <p className="border-b pb-2 text-lg pt-4">Legal</p>
-          <nav className="flex flex-col space-y-4 font-medium">
+          <nav className="flex flex-col text-muted-foreground space-y-4 font-medium">
             <Link href="/" className=" hover:text-primary">
               Terms of Use
             </Link>

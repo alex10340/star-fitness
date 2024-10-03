@@ -41,7 +41,7 @@ export default function MobileMenuDrawer({ className }: MobileMenuDrawerProps) {
             <Star className="text-primary" />
             <p className="font-bold text-lg">Star Fitness</p>
           </div>
-          <nav className="py-12 px-3 flex flex-col space-y-4">
+          <nav className="py-12 px-3 flex flex-col space-y-8">
             {menuItems.map((item) => (
               <Link
                 key={item.href}
@@ -52,14 +52,14 @@ export default function MobileMenuDrawer({ className }: MobileMenuDrawerProps) {
                 {item.label}
               </Link>
             ))}
-            <Link href="/signup" passHref legacyBehavior>
+            {/* <Link href="/signup" passHref legacyBehavior>
               <Button
                 onClick={() => setOpen(false)}
                 className="w-48 bg-gradient-to-b from-rose-500 to-rose-600"
               >
                 Sign Up
               </Button>
-            </Link>
+            </Link> */}
           </nav>
         </SheetContent>
         <SheetDescription></SheetDescription>
